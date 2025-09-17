@@ -52,8 +52,8 @@ It implements a responsive mini-dashboard built with **Next.js 15**, **TypeScrip
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git https://github.com/aktaruzzamanjoti97/zettabyte-tech
+cd  zettabyte-tech
 
 # 2. Install dependencies
 npm install    # or pnpm install / yarn install
