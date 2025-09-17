@@ -18,9 +18,9 @@ export default function Sidebar() {
 	const pathname = usePathname();
 	const { data: session } = useSession();
 
-	const filteredMenuItems = menuItems.filter(
-		(item) => !item.requireAuth || (item.requireAuth && session)
-	);
+     const filteredMenuItems = menuItems.filter(
+       (item) => !item.requireAuth || (item.requireAuth && session)
+   );
 
 	return (
 		<motion.aside
@@ -85,7 +85,7 @@ export default function Sidebar() {
 					);
 				})}
 			</nav>
-			{/* User Section */}
+            {/* User Section */}
 			{session?.user && (
 				<div className='absolute bottom-0 left-0 right-0 p-4 border-t border-dark-300'>
 					<Link href='/profile'>
