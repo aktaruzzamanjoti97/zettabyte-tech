@@ -107,23 +107,6 @@ export default function LoginPage() {
 								</div>
 							)}
 						</motion.button>
-
-						<div className='relative'>
-							<div className='absolute inset-0 flex items-center'>
-								<div className='w-full border-t border-dark-300'></div>
-							</div>
-							<div className='relative flex justify-center text-sm'>
-								<span className='px-2 bg-dark-400 text-gray-500'>
-									Or continue with
-								</span>
-							</div>
-						</div>
-
-						<button
-							disabled
-							className='w-full bg-dark-300 text-gray-400 py-3 px-4 rounded-lg font-medium cursor-not-allowed opacity-50'>
-							Email Sign In (Coming Soon)
-						</button>
 					</div>
 
 					<p className='text-center text-gray-500 text-sm mt-6'>

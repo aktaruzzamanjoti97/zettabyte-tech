@@ -1,7 +1,7 @@
 'use client';
 
-import Card from '@/components/Card';
 import StatsCard from '@/components/StatsCard';
+import Card from '@/ui/Card';
 import { motion } from 'framer-motion';
 
 export default function HomePage() {
@@ -81,15 +81,20 @@ export default function HomePage() {
 						Performance Chart
 					</h2>
 					<div className='h-48 flex items-end justify-around'>
-						{[65, 45, 78, 52, 88, 74, 90, 45, 80, 70].map((height, index) => (
-							<motion.div
-								key={index}
-								initial={{ height: 0 }}
-								animate={{ height: `${height}%` }}
-								transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-								className='w-8 bg-gradient-to-t from-indigo-500 to-indigo-300 rounded-t-lg'
-							/>
-						))}
+						{[65, 45, 78, 52, 88, 74, 90, 45, 80, 70].map(
+							(height, index) => (
+								<motion.div
+									key={index}
+									initial={{ height: 0 }}
+									animate={{ height: `${height}%` }}
+									transition={{
+										delay: 0.7 + index * 0.1,
+										duration: 0.5,
+									}}
+									className='w-8 bg-gradient-to-t from-indigo-500 to-indigo-300 rounded-t-lg'
+								/>
+							)
+						)}
 					</div>
 				</Card>
 			</div>

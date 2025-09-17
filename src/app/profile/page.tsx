@@ -1,7 +1,7 @@
 'use client';
 
-import Card from '@/components/Card';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import Card from '@/ui/Card';
 import { motion } from 'framer-motion';
 import { signOut, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';

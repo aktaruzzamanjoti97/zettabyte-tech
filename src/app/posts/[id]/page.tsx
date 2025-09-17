@@ -1,10 +1,10 @@
 'use client';
 
-import Card from '@/components/Card';
 import ErrorMessage from '@/components/ErrorMessage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import { useFetch } from '@/hooks/useFetch';
 import { Post } from '@/types';
+import Card from '@/ui/Card';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { use } from 'react';

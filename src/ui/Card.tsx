@@ -18,22 +18,8 @@ export default function Card({
 	animate = true,
 	delay = 0,
 }: CardProps) {
-	const cardVariants = {
-		hidden: { opacity: 0, y: 20 },
-		visible: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 0.5,
-				delay: delay,
-				ease: 'easeOut',
-			},
-		},
-	};
-
 	return (
 		<motion.div
-			// variants={animate ? cardVariants : undefined}
 			initial={animate ? 'hidden' : undefined}
 			animate={animate ? 'visible' : undefined}
 			whileHover={onClick ? { scale: 1.02, y: -5 } : { scale: 1.01 }}

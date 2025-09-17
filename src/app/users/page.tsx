@@ -2,9 +2,9 @@
 
 import ErrorMessage from '@/components/ErrorMessage';
 import LoadingSpinner from '@/components/LoadingSpinner';
-import Modal from '@/components/Modal';
 import { useFetch } from '@/hooks/useFetch';
 import { User } from '@/types';
+import Modal from '@/ui/Modal';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
@@ -65,7 +65,6 @@ export default function UsersPage() {
 									initial={{ opacity: 0, x: -20 }}
 									animate={{ opacity: 1, x: 0 }}
 									transition={{ delay: index * 0.05 }}
-									onClick={() => setSelectedUser(user)}
 									className='border-b border-gray-200 hover:bg-gray-50 cursor-pointer transition-colors'
 									whileHover={{ backgroundColor: '#f9fafb' }}>
 									<td className='px-6 py-4'>
@@ -94,9 +93,9 @@ export default function UsersPage() {
 										<motion.button
 											whileHover={{ scale: 1.05 }}
 											whileTap={{ scale: 0.95 }}
-											
+											onClick={() => setSelectedUser(user)}
 											className={`px-4 py-2 rounded-lg font-medium  transition-colors bg-green-600 text-white hover:bg-gray-700`}>
-										View
+											View
 										</motion.button>
 									</td>
 								</motion.tr>

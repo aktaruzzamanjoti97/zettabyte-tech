@@ -108,7 +108,7 @@ export default function Sidebar() {
 									<p className='text-white text-sm font-medium truncate'>
 										{session.user.name}
 									</p>
-									<p className='text-gray-500 text-xs truncate'>
+									<p className='text-gray-400 text-xs truncate'>
 										{session.user.email}
 									</p>
 								</div>
